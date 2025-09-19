@@ -1,273 +1,568 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IA- Web / Backend Developer</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Roboto + Roboto Slab-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
-    <!-- animate.css-->
-    <link rel="stylesheet" href="vendor/animate.css/animate.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <!-- Reference item-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container"><a href="#intro" class="navbar-brand scrollTo">IA</a>
-          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
-              <li class="nav-item"><a href="#services" class="nav-link link-scroll">Skills</a></li>
-              <li class="nav-item"><a href="#references" class="nav-link link-scroll">Portofolio</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
-            </ul>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ikhsan Abdillah - Software & Web Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/55969166.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Ikhsan Abdillah</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="https://drive.google.com/drive/u/0/folders/1d4-OIqHHMG0sltR76AMPLfRzUO3Et0Bq" target="_blank"><i class="bi bi-award-fill navicon"></i> Certifications</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/home.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Hi, I'm Ikhsan Abdillah</h2>
+        <p>A <span class="typed" data-typed-items="Developer, Fast Learner, Freelancer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/iksano.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              I am a fresh graduate majoring in Informatics Engineering at Indraprasta PGRI University. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. 
+              I have 4+ years of professional work experience which helped me strengthen my experience in PHP, Codeigniter, and Laravel. I am passionate about developing complex applications that solve real-world problems impacting millions of users
+              and I am the type who is diligent and wants to learn about new things, so I can gain more insight and skills to develop in the future.
+              With a strong background and a passion for continuous development, and I am committed to continuous development for contributing positively to my workplace.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Ikhsan Abdillah</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Date of Birth:</strong> <span>26 April 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>DKI Jakarta, Indonesia</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>WNI (Indonesian)</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Computer Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 896 0392 8198</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>abdillahikhsan34@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+            </p>
+            <div class="row g-1">
+              <div class="col-lg-3">
+                <a href="#contact" class="btn btn-secondary d-block btn-lg">Contact Me</a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/resume/CVIkhsanAbdillah.pdf" class="btn btn-success d-block btn-lg" target="_blank">Download My CV</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Intro Image-->
-    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
-      <div class="container text-center">
-        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, I'm Ikhsan. Nice to meet you.</h1>
-        <p data-animate="slideInUp" class="h3 text-shadow text-400">I'm a web developer and back-end developer based in Jakarta, Indonesia</p>
+
       </div>
-    </section>
-    <!-- About-->
-    <section id="about" class="about-section aboutme">
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title d-flex" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
       <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">About Me</h2>
-        </header>
         <div class="row">
-          <div data-animate="fadeInUp" class="col-sm-6 mx-auto"><img src="img/iksano.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <h2>Who I Am?</h2>
-            <p style="font-size: 25px;">Hello,  my name is Ikhsan Abdillah.</p>
-            <p style="font-size: 25px;">I was interested in programming since junior high school, but I just started studying during vocational high
-              school,
-              because I chose to major in software engineering. Until now, I am still learning and will continue to learn in this
-              field. I really love this. And I can learn new things quickly.</p>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Full-Lifecycle Software & Web Developer</h4>
+              <p><em>Innovative and deadline-driven Software and Web Developer with 4+ years of experience designing and developing software and website from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>DKI Jakarta, Indonesia</li>
+                <li>(+62) 896-0392-8198</li>
+                <li>abdillahikhsan34@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+              <h4>Bachelor of Computer Science &amp; Informatics Engineering</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Indraprasta PGRI University, DKI Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Software Engineering</li>
+                <li>Operating Systems</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Organization</h3>
+            <div class="resume-item">
+              <h4>Chairman of the Ministry of Communication and Information</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>Student Activity Units Basketball - Universitas Indraprasta PGRI</em></p>
+              <ul>
+                <li>Ensure that information regarding training schedules, activities and other announcements is well distributed via WhatsApp and Instagram platforms</li>
+                <li>Manage and regulate social media content consistently to maintain the existence of UKM Basketball on digital platforms.</li>
+                <li>Coordinate with the team to ensure any information or content published is relevant, accurate and timely.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
           </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>June 2025 - Present</h5>
+              <p><em>PT Sumber Data Indonesia</em></p>
+              <ul>
+                <li>Redesign existing web-based application.</li>
+                <li>Developed software with php native and codeigniter.</li>
+                <li>Deploy web to server using CI/CD ssh.</li>
+                <li>Collaborated with grapich designer to create web attractive.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>August 2022 – January 2024</h5>
+              <p><em>PT Anarya Teknologi Indonesia</em></p>
+              <ul>
+                <li>Collaborated with users through interviews and feedback sessions to identify key software requirements.</li>
+                <li>Designed, built, and tested applications based on user specifications.</li>
+                <li>Managed software regularly and fixed errors.</li>
+                <li>Collaborated with other developers to create software.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>PHP Programmer</h4>
+              <h5>April 2019 – June 2022</h5>
+              <p><em>PT Khatulistiwa Mandala</em></p>
+              <ul>
+                <li>Managed existing web-based applications.</li>
+                <li>Developed software engineering with PHP native and Laravel. </li>
+                <li>Conducted trials and improvements on applications.</li>
+                <li>Implemented web authentication and authorization.</li>
+                <li>Analyzed user input data with original document data.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
         </div>
+
       </div>
-    </section>
-    <!-- Service-->
-    <section id="services" class="bg-gray services-section skillsme">
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="projects" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
       <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">My Skills</h2>
-        </header>
-        <div class="row services text-center">
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/php-brands.svg" width="100px;"></div>
-            <h3 class="heading mb-3 text-400">PHP</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/html5-brands.svg" width="45px;"></div>
-            <h3 class="heading mb-3 text-400">HTML</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/css3-alt-brands.svg" width="45px;"></div>
-            <h3 class="heading mb-3 text-400">CSS</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/js-brands.svg" width="53px;"></div>
-            <h3 class="heading mb-3 text-400">JAVASCRIPT</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/bootstrap-brands.svg" width="50px;"></div>
-            <h3 class="heading mb-3 text-400">BOOTSTRAP</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/github-brands.svg" width="60px;"></div>
-            <h3 class="heading mb-3 text-400">GITHUB</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/ci-logo-big.png" width="50px;"></div>
-            <h3 class="heading mb-3 text-400">CODEIGNITER</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/laravel-brands.svg" width="53px;"></div>
-            <h3 class="heading mb-3 text-400">LARAVEL</h3>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><img src="img/customers/icons8-rest-api.svg" width="53px;"></div>
-            <h3 class="heading mb-3 text-400">RESTFULL API</h3>
-          </div>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-design">Web Design</li>
+            <li data-filter=".filter-app">Web Development</li>
+            <li data-filter=".filter-branding">Desktop Development</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container pt-3" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/production-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Zetta</h4>
+                  <p>Web Internet Service Provider</p>
+                  <a href="assets/img/portfolio/production-1.png" title="Zetta" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="zetta-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/production-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Asiagate</h4>
+                  <p>Web Internet Service Provider</p>
+                  <a href="assets/img/portfolio/production-2.png" title="Asiagate" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="asiagate-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/wep-app-1.png" class="img-fluid">
+                <div class="portfolio-info">
+                  <h4>Simpati 223</h4>
+                  <p>Web App record the history of incoming and outgoing letters that occur at Administration SMPN 223 Jakarta.</p>
+                  <a href="assets/img/portfolio/wep-app-1.png" title="Simpati 223" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="simpati223-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/web-app-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Safezone</h4>
+                  <p>Housing complex security application that is equipped with a security system and a special information center.</p>
+                  <a href="assets/img/portfolio/web-app-2.png" title="Safezone" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="safezone-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/web-app-3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Hellocation</h4>
+                  <p>Web App Selection Best Employee</p>
+                  <a href="assets/img/portfolio/web-app-3.png" title="Hellocation" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="hellocation-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/desktop-app-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Sipenja</h4>
+                  <p>SMKN Al Hidayah 1 KJP Determination System</p>
+                  <a href="assets/img/portfolio/desktop-app-1.png" title="Sipenja" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="sipenja-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/desktop-app-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Expert System PMI Jakarta Selatan</h4>
+                  <p>Expert system for diagnosing acute respiratory infections using the forward chaining method.</p>
+                  <a href="assets/img/portfolio/desktop-app-2.png" title="Expert System PMI Jakarta Selatan" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="expert-system-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/web-design-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Company Profile Lovo Agency</h4>
+                  <p>Web design about company profile lovo agency</p>
+                  <a href="assets/img/portfolio/web-design-1.png" title="Company Profile Lovo Agency" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="lovo-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-        <hr data-animate="fadeInUp">
-        <div data-animate="fadeInUp" class="text-center">
-          <p class="lead">Would you like to know more or just discuss something?</p>
-          <p><a href="#contact" class="btn btn-outline-primary link-scroll">Contact me</a></p>
-        </div>
+
       </div>
-    </section>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-12">
+
+            <div class="row text-center">
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/html5-brands.svg" width="45px;"></div>
+                <h3 class="heading mb-3 text-400">HTML</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/css3-alt-brands.svg" width="45px;"></div>
+                <h3 class="heading mb-3 text-400">CSS</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/js-brands.svg" width="53px;"></div>
+                <h3 class="heading mb-3 text-400">JAVASCRIPT</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/bootstrap-brands.svg" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">BOOTSTRAP</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon pb-2"><img src="assets/img/skills/logo-tailwind.png" width="80px;"></div>
+                <h3 class="heading mb-3 text-400">TAILWIND CSS</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-ajax.png" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">AJAX</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-jquery.png" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">JQUERY</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-vue-js.jpg" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">VUE JS</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-java.png" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">JAVA</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/php-brands.svg" width="100px;"></div>
+                <h3 class="heading mb-3 text-400">PHP</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/ci-logo-big.png" width="50px;"></div>
+                <h3 class="heading mb-3 text-400">CODEIGNITER</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/laravel-brands.svg" width="53px;"></div>
+                <h3 class="heading mb-3 text-400">LARAVEL</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-python.png" width="53px;"></div>
+                <h3 class="heading mb-3 text-400">PYTHON</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/icons8-rest-api.svg" width="53px;"></div>
+                <h3 class="heading mb-3 text-400">RESTFULL API</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-graphql.png" width="53px;"></div>
+                <h3 class="heading mb-3 text-400">GRAPHQL</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-git.jpg" width="60px;"></div>
+                <h3 class="heading mb-3 text-400">GIT</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/github-brands.svg" width="60px;"></div>
+                <h3 class="heading mb-3 text-400">GITHUB</h3>
+              </div>
+              <div data-animate="fadeInUp" class="col-lg-4 col-6">
+                <div class="icon"><img src="assets/img/skills/logo-ci-cd.png" width="130px;"></div>
+                <h3 class="heading mb-3 text-400">CI CD PIPELINES</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Lets Connect</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                      <h3>Address</h3>
+                      <p>Manunggal II street No.82 RT/RW 011/006, Rambutan, Ciracas, Jakarta Timur, DKI Jakarta 13830, Indonesia</p>
+                    </div>
+                  </div><!-- End Info Item -->
     
-    <!--
-    *** REFERENCES IMAGE ***
-    _________________________________________________________
-    -->
-    <section id="references" class="myportofolio">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb-5 text-center">
-            <h2 data-animate="fadeInUp" class="title">My portfolio</h2>
-          </div>
-          <div id="detail">
-            <div class="row">
-              <div class="col-lg-10 mx-auto"><span class="close">×</span>
-                <div id="detail-slider" class="owl-carousel owl-theme"></div>
-                <div class="text-center">
-                  <h1 id="detail-title" class="title"></h1>
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                      <h3>Call</h3>
+                      <p>+62 896 0392 8198</p>
+                    </div>
+                  </div><!-- End Info Item -->
+    
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                      <h3>Email</h3>
+                      <p>abdillahikhsan34@gmail.com</p>
+                    </div>
+                  </div><!-- End Info Item -->
                 </div>
-                <div id="detail-content"></div>
+                <div class="col-lg-5">
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-instagram flex-shrink-0"></i>
+                    <div>
+                      <h3>Instagram</h3>
+                      <a href="https://www.instagram.com/iamikhsannn/">@iamikhsannn</a>
+                    </div>
+                  </div><!-- End Info Item -->
+    
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-github flex-shrink-0"></i>
+                    <div>
+                      <h3>Github</h3>
+                      <a href="https://github.com/ikhsannn">@ikhsannn</a>
+                    </div>
+                  </div><!-- End Info Item -->
+        
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-linkedin flex-shrink-0"></i>
+                    <div>
+                      <h3>Linkedin</h3>
+                      <a href="https://www.linkedin.com/in/ikhsannnn/">linkedin.com/in/ikhsannnn/</a>
+                    </div>
+                  </div><!-- End Info Item -->
+                </div>
               </div>
             </div>
           </div>
-          <!-- Reference detail-->
-          <div id="references-masonry" data-animate="fadeInUp">
-            <div class="row">
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="./img/podobeliid.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">podobeli.id</h3>
-                            <p>Podobeli merupakan situs jual beli online di indonesia yang memiliki jutaan toko online</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/podobeliidslider.png,img/podobeliidsliderr.png" class="sr-only reference-description">
-                        <p class="buttons text-center"><a href="https://podobeli.id/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/mpodobeliid.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">m.podobeli.id</h3>
-                            <p>Podobeli merupakan situs jual beli online di indonesia yang memiliki jutaan toko online</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/mpodobeliidslider.png,img/mpodobeliidsliderr.png" class="sr-only reference-description">
-                        <p class="buttons text-center"><a href="https://m.podobeli.id/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/podobelicom.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">podobeli.com</h3>
-                            <p>Podobeli merupakan situs jual beli online di indonesia yang memiliki jutaan toko online</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/podobelicomslider.png,img/podobelicomsliderr.png" class="sr-only reference-description">
-                        <p class="buttons text-center"><a href="https://podobeli.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/adpi.JPG" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Accounting ADPI</h3>
-                            <p>Organisasi yang sehat dan terpercaya</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/adpi1.JPG,img/adpi2.JPG" class="sr-only reference-description">
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
         </div>
+
       </div>
-    </section>
-    <!-- Contact-->
-    <section id="contact" data-animate="bounceIn" class="contact-section contact bg-gray">
-      <div class="container">
-        <header class="text-center">
-          <h2 class="title">Contact me</h2>
-        </header>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form id="contact-form" method="post" action="">
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
-                  </div>
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-outline-primary">Send message</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p><span>Copyright</span> © 2025 <strong class="px-1 sitename">Ikhsan abdillah</strong> <span>All Rights Reserved.</span></p>
       </div>
-    </section>
-    <!-- Map-->
-    <div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-258px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(763px, 51px, 0px) scale(0.5);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 20; transform: translate3d(556px, 31px, 0px) scale(1);"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/535/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(347px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/535/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(347px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/534/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(91px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/536/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(603px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/534/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(91px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/536/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(603px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/533/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-165px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/537/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(859px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/533/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-165px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/537/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(859px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/534/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(91px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/535/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(347px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/533/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-165px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/536/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(603px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/532/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-421px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/532/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-421px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/532/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-421px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/537/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(859px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/531/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-677px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/538/333.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1115px, 93px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-d.a.ssl.fastly.net/toner-lite/10/531/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-677px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-c.a.ssl.fastly.net/toner-lite/10/538/332.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1115px, -163px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-b.a.ssl.fastly.net/toner-lite/10/531/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-677px, 349px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://stamen-tiles-a.a.ssl.fastly.net/toner-lite/10/538/334.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1115px, 349px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="img/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12.5px; margin-top: -18.75px; width: 25px; height: 37.5px; transform: translate3d(1001px, 100px, 0px); z-index: 100;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(137009px, 85324px, 0px) scale(512);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div></div></div></div>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-lg-left">
-            <p class="social"><a href="https://twitter.com/IkhsannAbdillah" class="external facebook wow fadeInUp"><img src="img/customers/twitter-brands.svg" width="25px;"></a><a href="https://www.instagram.com/ikhsan874/" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="https://github.com/ikhsannn" data-wow-delay="0.6s" class="email wow fadeInUp"><img src="img/customers/github-brands.svg" width="25px;"></a></p>
-          </div>
-          <!-- /.6-->
-          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2018 Ikhsan Abdillah. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <script src="js/front.js"></script>
-  </body>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

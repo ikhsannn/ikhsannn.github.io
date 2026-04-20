@@ -229,7 +229,7 @@ h6 {
   left: 0;
 }
 
-.header .header-toggle {
+/* .header-toggle {
   color: var(--contrast-color);
   background-color: var(--accent-color);
   font-size: 22px;
@@ -245,9 +245,25 @@ h6 {
   right: 15px;
   z-index: 9999;
   transition: background-color 0.3s;
+} */
+.header-toggle {
+  color: var(--contrast-color) !important; /* Paksa warna putih dulu untuk tes */
+  background-color: var(--accent-color) !important; /* Paksa warna biru/aksen */
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed !important;
+  top: 15px;
+  right: 15px;
+  z-index: 99999; /* Naikin satu digit biar aman */
+  display: flex !important;
+  font-size: 22px;
 }
 
-.header .header-toggle:hover {
+.header-toggle:hover {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }

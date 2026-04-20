@@ -261,6 +261,8 @@ h6 {
   z-index: 99999; /* Naikin satu digit biar aman */
   display: flex !important;
   font-size: 22px;
+  -webkit-transform: translateZ(0); /* Memaksa Safari bikin layer baru */
+  transform: translateZ(0);
 }
 
 .header-toggle:hover {

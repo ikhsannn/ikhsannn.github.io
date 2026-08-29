@@ -976,6 +976,33 @@ section,
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+@media (max-width: 768px) {
+  .portfolio-filters {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 12px;
+    justify-content: flex-start !important;
+    
+    /* Trik agar tombol paling kanan terlihat terpotong (mengisyaratkan bisa digeser) */
+    padding-right: 30px; 
+    
+    scrollbar-width: none;
+  }
+  
+  .portfolio-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-filters li {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 7px 14px;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/

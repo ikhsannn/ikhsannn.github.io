@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SANSITE - Digital Portfolio | Ikhsan Abdillah</title>
+  <meta content="Digital Portfolio of Ikhsan Abdillah - Software & Web Developer" name="description">
+  <meta content="SANSITE, Portfolio, Web Developer, Software Developer, Ikhsan Abdillah" name="keywords">
+
+  <link href="assets/img/sansite-favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent-color: #B41838; /* Crimson Red */
+      --text-color: #4A5560; /* Charcoal Gray */
+      --bg-sidebar: #ffffff; /* White Sidebar */
+    }
+
+    /* 1. UBAH SIDEBAR JADI PUTIH BERSIH */
+    .header {
+      background-color: var(--bg-sidebar) !important;
+      border-right: 1px solid #f0f0f0; /* Garis batas tipis agar rapi memisah konten */
+    }
+
+    /* 2. WARNA MENU DEFAULT (GELAP) */
+    .navmenu a, .navmenu a:focus {
+      color: var(--text-color) !important;
+    }
+    .navmenu a i, .navmenu a:focus i {
+      color: var(--text-color) !important;
+    }
+
+    /* 3. WARNA MENU SAAT AKTIF / HOVER (CRIMSON RED) */
+    .navmenu .active, .navmenu .active:focus, .navmenu a:hover {
+      color: var(--accent-color) !important;
+    }
+    .navmenu .active i, .navmenu .active:focus i, .navmenu a:hover i, .navmenu li:hover>a i {
+      color: var(--accent-color) !important;
+    }
+
+    /* 4. PENYESUAIAN LOGO AGAR MELEBUR (SEAMLESS) */
+    .profile-img {
+      margin: 30px auto 0px auto !important;
+      text-align: center;
+    }
+    .profile-img img {
+      width: 85% !important; 
+      max-width: 220px !important;
+      border: none !important; 
+      /* Efek kotak/stiker dihilangkan agar menyatu dengan background putih sidebar */
+      box-shadow: none !important; 
+      padding: 0 !important;
+      background-color: transparent !important;
+    }
+
+    /* 5. AKSEN LAINNYA */
+    .btn-secondary {
+      background-color: #4A5560;
+      border-color: #4A5560;
+    }
+    .btn-secondary:hover {
+      background-color: #363e46;
+      border-color: #363e46;
+    }
+    .btn-success {
+      background-color: #B41838;
+      border-color: #B41838;
+    }
+    .btn-success:hover {
+      background-color: #8f122c;
+      border-color: #8f122c;
+    }
+    .about .bi-chevron-right, .icon-service {
+      color: var(--accent-color);
+    }
+    .resume .resume-item::before {
+      background: var(--accent-color);
+    }
+    .resume .resume-title {
+      color: var(--text-color);
+    }
+    
+    /* Warna tombol toggle menu di mobile */
+    .header-toggle {
+      color: var(--text-color) !important;
+    }
+
+    /* 6. PAKSA HIDE TOGGLE DI LAYAR LAPTOP/DESKTOP */
+    @media (min-width: 992px) {
+      .header-toggle,
+      .mobile-nav-toggle {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+  
+  <header id="header" class="header d-flex flex-column">
+
+    <div class="profile-img">
+      <a href="index.html">
+        <img src="assets/img/sansite-color.png" alt="SANSITE Logo" class="img-fluid">
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu mt-1">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="#services"><i class="bi bi-tools navicon"></i> Services</a></li>
+        <li><a href="#testimoni"><i class="bi bi-quote navicon"></i> Testimonials</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="https://drive.google.com/drive/u/0/folders/1d4-OIqHHMG0sltR76AMPLfRzUO3Et0Bq" target="_blank"><i class="bi bi-award-fill navicon"></i> Certifications</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section (Light Theme) -->
+    <section id="hero" class="hero section d-flex align-items-center" style="min-height: 100vh; background-color: #f8f9fa; position: relative; overflow: hidden;">
+
+      <!-- Efek Ornamen (Diubah jadi abu-abu super transparan) -->
+      <div style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 25vw; color: rgba(0,0,0,0.03); font-weight: 900; line-height: 1; user-select: none; z-index: 0;">
+        &lt;/&gt;
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 1;">
+        
+        <!-- Eyebrow Text (Crimson) -->
+        <span style="color: #B41838; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; display: inline-block;">
+          👋 Welcome to my digital space
+        </span>
+
+        <!-- Teks Utama (Charcoal Gray) -->
+        <h2 style="font-size: 64px; font-weight: 700; color: #333333; margin-bottom: 15px;">Hi, I'm Ikhsan Abdillah</h2>
+        <p style="font-size: 26px; color: #666666; margin-bottom: 20px;">A <span class="typed" data-typed-items="Developer, Fast Learner, Freelancer" style="color: #4A5560; font-weight: 600;">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p style="font-size: 18px; color: #555555; max-width: 600px; margin-bottom: 40px; line-height: 1.6;">I build fast, responsive, and user-friendly web applications to help businesses solve complex problems.</p>
+        
+        <!-- Tombol -->
+        <div class="d-flex gap-3">
+          <a href="#projects" class="btn" style="background-color: #B41838; color: white; padding: 12px 30px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.3s;">View Projects</a>
+          <a href="#contact" class="btn" style="border: 2px solid #4A5560; color: #4A5560; padding: 12px 30px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.3s;" onmouseover="this.style.backgroundColor='#4A5560'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4A5560';">Let's Talk</a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+</main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p><span>Copyright</span> © 2026 <strong class="px-1" style="color: #B41838;">SANSITE Digital Portfolio</strong> <span>All Rights Reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #B41838;"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

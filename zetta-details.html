@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Software & Web Developer</title>
+  <title>Zetta - Portfolio Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/sansite-favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,71 +26,54 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
 
   <i class="header-toggle d-xl-none bi bi-list"></i>
-  <header id="header" class="header dark-background d-flex flex-column">
-
+  
+  <header id="header" class="header d-flex flex-column">
     <div class="profile-img">
-      <img src="assets/img/55969166.jpeg" alt="" class="img-fluid rounded-circle">
+      <a href="index.html">
+        <img src="assets/img/sansite-color.png" alt="SANSITE Logo" class="img-fluid">
+      </a>
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Ikhsan Abdillah</h1>
-    </a>
-
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark navicon"></i> Resume</a></li>
-        <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
-        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
-        <li><a href="#services"><i class="bi bi-tools navicon"></i> Services</a></li>
-        <li><a href="#testimoni"><i class="bi bi-quote navicon"></i> Testimonials</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark navicon"></i> Resume</a></li>
+        <li><a href="index.html#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="index.html#services"><i class="bi bi-tools navicon"></i> Services</a></li>
+        <li><a href="index.html#testimoni"><i class="bi bi-quote navicon"></i> Testimonials</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         <li><a href="https://drive.google.com/drive/u/0/folders/1d4-OIqHHMG0sltR76AMPLfRzUO3Et0Bq" target="_blank"><i class="bi bi-award-fill navicon"></i> Certifications</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <!-- Portfolio Details Section (Tanpa Page Title, Langsung Masuk Konten ala Hero) -->
+    <section id="portfolio-details" class="portfolio-details section light-background" style="padding-top: 60px;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Tombol Kembali ke Projects -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <a href="index.html#projects" style="color: #B41838; text-decoration: none; font-weight: 600; font-size: 14px;">
+              <i class="bi bi-arrow-left me-1"></i> Back to Projects
+            </a>
+          </div>
+        </div>
 
         <div class="row gy-4">
 
+          <!-- KOLOM KIRI: Slider Gambar -->
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+            <div class="portfolio-details-slider swiper init-swiper shadow-sm" style="border-radius: 12px; overflow: hidden; background: #fff;">
 
               <script type="application/json" class="swiper-config">
                 {
@@ -109,56 +92,57 @@
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/zetta/zetta-1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/zetta/zetta-2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/zetta/zetta-3.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/zetta/zetta-4.png" alt="">
-                </div>
-
+                <div class="swiper-slide"><img src="assets/img/portfolio/zetta/zetta-1.png" alt="" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/zetta/zetta-2.png" alt="" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/zetta/zetta-3.png" alt="" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/zetta/zetta-4.png" alt="" class="img-fluid"></div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Zetta</h2>
-              <p>
+
+            <!-- Deskripsi Studi Kasus -->
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h2 style="font-weight: 700; color: #333; font-size: 24px; margin-bottom: 15px;">Overview</h2>
+              <p style="color: #555; line-height: 1.7;">
                 A comprehensive company profile website for Zetta-Net, designed to be the primary digital gateway to reaching new customers, showcasing a range of internet packages.
               </p>
-              <h2>The challange</h2>
-              <p>
+              
+              <h2 style="font-weight: 700; color: #333; font-size: 22px; margin-top: 30px; margin-bottom: 15px; border-left: 4px solid #B41838; padding-left: 10px;">The Challenge</h2>
+              <p style="color: #555; line-height: 1.7;">
                 As an internet service provider, Zetta-Net needed an online platform that was both professional and functional. The challenge was to create a website that could clearly present complex service packages, reassure potential customers, and, most importantly, simplify the previously manual pre-survey request process.
               </p>
-              <h2>Zetta</h2>
-              <p>
+              
+              <h2 style="font-weight: 700; color: #333; font-size: 22px; margin-top: 30px; margin-bottom: 15px; border-left: 4px solid #B41838; padding-left: 10px;">My Solution</h2>
+              <p style="color: #555; line-height: 1.7;">
                 As a Full-Stack Developer, I built the zetta.net.id website from scratch. I designed an intuitive user flow, from viewing service packages to completing a pre-survey form, which was integrated directly with the backend system. This website successfully transformed the way Zetta-Net acquired new leads, making it more efficient and structured.
               </p>
             </div>
           </div>
 
+          <!-- KOLOM KANAN: Informasi Proyek & Judul Utama Ala Hero -->
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web Development</li>
-                <li><strong>Client</strong>: PT Sumber Data Indonesia</li>
-                <li><strong>Year</strong>: 2025</li>
-                <li><strong>Role</strong>: Full-Stack Developer</li>
-                <li><strong>Stack Tech</strong>: Codeigniter 3, Bootstrap 4, Jquery, POSTGRESQL</li>
-                <li><strong>Visibility</strong>: Public</li>
+            <div class="portfolio-info sticky-top" data-aos="fade-up" data-aos-delay="200" style="background: transparent; border: none; box-shadow: none; padding: 0; top: 20px;">
+              
+              <!-- Judul Proyek Besar (Gaya Hero) -->
+              <h1 style="font-weight: 800; color: #333; font-size: 28px; margin-bottom: 10px; line-height: 1.2;">Zetta</h1>
+              <p style="color: #B41838; font-weight: 600; font-size: 15px; margin-bottom: 25px;">Web Internet Service Provider</p>
+
+              <div style="border-bottom: 2px solid #eaeaea; margin-bottom: 20px;"></div>
+
+              <h3 style="font-weight: 700; color: #333; font-size: 18px; margin-bottom: 15px;">Project Information</h3>
+              <ul style="list-style: none; padding-left: 0; margin-bottom: 25px;">
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Category:</strong> Web Development</li>
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Client:</strong> PT Sumber Data Indonesia</li>
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Year:</strong> 2025</li>
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Role:</strong> Web Developer</li>
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Stack Tech:</strong> CodeIgniter 3, Bootstrap 4, PostgreSQL</li>
+                <li class="mb-3" style="color: #555;"><strong style="color: #333; width: 110px; display: inline-block;">Visibility:</strong> Public</li>
               </ul>
-              <a href="https://zetta.net.id/" class="btn btn-primary d-block">View Project</a>
+              
+              <a href="https://zetta.net.id/" target="_blank" class="btn w-100" style="background-color: #B41838; border-color: #B41838; color: #ffffff; font-weight: 600; padding: 12px 25px; border-radius: 8px; transition: 0.3s;" onmouseover="this.style.backgroundColor='#9a122e'" onmouseout="this.style.backgroundColor='#B41838'">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Visit Live Site
+              </a>
             </div>
-            
           </div>
 
         </div>
@@ -170,13 +154,11 @@
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
       <div class="copyright text-center ">
-        <p><span>Copyright</span> © 2025 <strong class="px-1 sitename">Ikhsan abdillah</strong> <span>All Rights Reserved.</span></p>
+        <p><span>Copyright</span> © 2026 <strong class="px-1" style="color: #B41838;">SANSITE </strong><strong>DIGITAL PORTFOLIO</strong> <span>All Rights Reserved.</span></p>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->

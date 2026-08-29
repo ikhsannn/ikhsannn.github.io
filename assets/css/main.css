@@ -22,15 +22,15 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #B41838; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #E2E8F0;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4299E1; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #4A5560;  /* The default color of the main navmenu links */
+  --nav-hover-color: #B41838; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
+  --background-color: #f8f9fa;
   --surface-color: #ffffff;
 }
 
@@ -170,6 +170,20 @@ h6 {
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
+.header .profile-img {
+  margin: 30px auto 0px auto !important;
+  text-align: center;
+}
+.header .profile-img img {
+  width: 85% !important; 
+  max-width: 220px !important;
+  border: none !important; 
+      /* Efek kotak/stiker dihilangkan agar menyatu dengan background putih sidebar */
+  box-shadow: none !important; 
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
 .header .logo {
   line-height: 1;
   margin-bottom: 15px;
@@ -268,6 +282,13 @@ h6 {
 .header-toggle:hover {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+@media (min-width: 992px) {
+  .header-toggle,
+  .mobile-nav-toggle {
+    display: none !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -563,84 +584,113 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* =======================================================
+     * HERO SECTION LIGHT THEME STYLES
+     ======================================================== */
+    .hero-light-theme {
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      position: relative;
+      overflow: hidden;
+    }
 
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
+    .hero-ornament {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 25vw;
+      color: rgba(0,0,0,0.05);
+      font-weight: 900;
+      line-height: 1;
+      user-select: none;
+      z-index: 0;
+      pointer-events: none; /* KUNCI UTAMA: Agar tidak memblokir klikan tombol */
+    }
 
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
+    .hero-content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
 
-.hero .container {
-  position: relative;
-  z-index: 3;
-}
+    .hero-eyebrow {
+      color: #B41838;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
 
-.hero h2 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
-}
+    .hero-title {
+      font-size: 64px;
+      font-weight: 700;
+      color: #333333;
+      margin-bottom: 15px;
+    }
 
-.hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
-}
+    /* Penyesuaian responsif agar judul tidak berantakan di layar HP */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 42px; 
+      }
+    }
 
-.hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
-}
+    .hero-subtitle {
+      font-size: 26px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
 
-.hero .social-links {
-  margin-top: 25px;
-}
+    .hero-typed-text {
+      color: #4A5560;
+      font-weight: 600;
+    }
 
-.hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
+    .hero-desc {
+      font-size: 18px;
+      color: #555555;
+      max-width: 600px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
 
-.hero .social-links a:hover {
-  color: var(--accent-color);
-}
+    /* Tombol Primary (View Projects - Merah) */
+    .btn-hero-primary {
+      background-color: #B41838;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .btn-hero-primary:hover {
+      background-color: #8f122c; /* Warna sedikit digelapkan saat di-hover */
+      color: white;
+    }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-}
+    /* Tombol Secondary (Let's Talk - Garis) */
+    .btn-hero-secondary {
+      border: 2px solid #4A5560;
+      background-color: transparent;
+      color: #4A5560;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .btn-hero-secondary:hover {
+      background-color: #4A5560; /* Efek hover tanpa butuh JavaScript inline lagi */
+      color: #ffffff;
+    }
 
 /*--------------------------------------------------------------
 # About Section
@@ -670,6 +720,10 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
+}
+
+.about .card-shadow{
+  border: 1px solid #f0f0f0; box-shadow: 0 5px 20px rgba(0,0,0,0.03);
 }
 
 /*--------------------------------------------------------------
@@ -813,19 +867,24 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  padding: 8px 20px;
   font-size: 14px;
-  font-weight: 400;
-  margin: 0 10px;
-  line-height: 1;
+  font-weight: 600;
   text-transform: uppercase;
+  color: #666666;
+  background: #f1f3f5;
+  margin-bottom: 5px;
+  line-height: 1;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  margin-right: 8px;
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+  background-color: #B41838 !important;
+  color: #ffffff !important;
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -844,8 +903,11 @@ section,
 }
 
 .portfolio .portfolio-content {
-  position: relative;
+  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
 }
 
 .portfolio .portfolio-content img {
@@ -911,6 +973,7 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /*--------------------------------------------------------------
